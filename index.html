@@ -1,0 +1,337 @@
+<html>
+  <head>
+    <title>Cheng-En Wu's Website</title>
+    <script src='js/jquery-1.11.2.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,100italic,100,300,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'sans-serif';
+        font-size: 16px;
+        background-color: rgb(232, 226, 214);
+        color: #4F6071;
+      }
+      .color1 {
+        background-color: #CCC;
+      }
+      #header {
+        width: 100%;
+        height: 360px;
+        /* background-color: #F0EAD6 */
+        background-color: rgb(190, 216, 237)
+        /* background-color: #b30000; */
+        /* background-color: #CCC; */
+      }
+      #header-inner {
+        position: absolute;
+        width: 70%;
+        left: 30%;
+        top: 150px;
+      }
+      .img-me {
+        border: 3px solid white;
+        float: left;
+        height: 200px;
+      }
+      .header-text {
+        margin-top: 60px;
+        margin-left: 220px;
+      }
+      .header-text-name {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .header-text-email {
+        font-size: 20px;
+        font-style: italic;
+      }
+      .header-text-desc {
+        font-size: 20px;
+      }
+      #contact-info {
+        position: absolute;
+        left: 80%;
+        width: 20%;
+        top: 360px;
+        height: 100px;
+        background-color: #EEE;
+      }
+      .vspace {
+        margin-bottom: 20px;
+      }
+      .vspace-top {
+        margin-top: 30px;
+      }
+      .paper-image {
+        width: 150px;
+      }
+      .paper-title {
+        font-weight: bold;
+      }
+      .paper-authors {
+        font-style: italic;
+      }
+      .paper-link {
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50623594-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id='header'>
+      <div id='header-inner'>
+        <img src='images/Cheng-En.jpg' class='img-circle img-me'>
+        <div class='header-text'>
+          <div class='header-text-name'>
+            Cheng-En Wu
+          </div>
+          <div class='header-text-email'>
+            chengen at iis dot sinica dot edu dot tw
+          </div>
+          <div>
+            <a href="https://github.com/CEWu">[GitHub]</a>
+            <a href="https://scholar.google.com.tw/citations?user=1y1jrqwAAAAJ&hl=en">[Google Scholar]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div class='col-xs-10 col-md-offset-1'>
+        <div class='row'>
+          <h1>About</h1>
+          <div class='vspace'>
+            I currently work with Prof.
+            <a href="http://www.iis.sinica.edu.tw/pages/song/eindex.html" target='_blank'>
+            Chu-Song Chen</a>
+            in <a href="https://www.iis.sinica.edu.tw/index_en.html" target='_blank'>
+            Institute of Information Science, Academia Sinica</a>.<br>
+            I have broad interests in Computer Vision and Deep Learning.
+            In particular, I am interested in computational efficiency of 
+            neural networks for multiple tasks and real-time object detector.
+            More details, please see my 
+            <a href="https://cewu.github.io/files/CHENG_EN_WU_s_CV.pdf" target='_blank'>
+            CV</a> (updated: September 2019).
+          </div>
+          <div class='vspace'>
+            <br><b>I am looking for a Ph.D. position start from 2020 
+              Fall or any research internship start from 2019 Winter/Spring.</b><br>
+          </div>
+        </div>
+        <div class='row'>
+          <h1>Publications</h1>
+
+          <div class='row vspace-top'>
+              <div class='col-xs-3 text-center'>
+                <img class='paper-image' src='images/19_NeurIPS_thumb.png'>
+              </div>
+              <div class='col-xs-9'>
+                <div class='paper-title'>
+                  Compacting, Picking and Growing for Unforgetting Continual Learning
+                </div>
+                <div class='paper-authors'>
+                    Steven C. Y. Hung, Cheng-Hao Tu, <u>Cheng-En Wu</u>, Chien-Hung Chen, Yi-Ming Chan, Chu-Song Chen
+                </div>
+                <div>
+                    Conference on Neural Information Processing Systems (NeurIPS), 2019
+                </div>
+                <div>
+                  <a href=""></a>[paper]</a>
+                  <a href="https://github.com/ivclab/CPG">[code]</a>
+                </div>
+              </div>
+            </div>
+
+            <div class='row vspace-top'>
+                <div class='col-xs-3 text-center'>
+                  <img class='paper-image' src='images/19_MMSP_thumb.png'>
+                </div>
+                <div class='col-xs-9'>
+                  <div class='paper-title'>
+                    IMMVP: An Efficient Daytime and NighttimeOn-Road Object Detector
+                  </div>
+                  <div class='paper-authors'>
+                    <u>Cheng-En Wu</u>, Yi-Ming Chan, Chien-Hung Chen, Wen-Cheng Chen, Chu-Song Chen
+                  </div>
+                  <div>
+                      IEEE International Workshop on Multimedia Signal Processing (MMSP), 2019
+                  </div>
+                  <div>
+                    <a href=""></a>[paper]</a>
+                    <a href=""></a>[code]</a>
+                  </div>
+                </div>
+              </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/19_EMC2_thumb.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                On Merging MobileNets for Efficient Multitask Inference
+              </div>
+              <div class='paper-authors'>
+                <u>Cheng-En Wu</u>, Yi-Ming Chan, Chu-Song Chen
+              </div>
+              <div>
+                  International Symposium on high Performance Computer Architecture (HPCA) Workshop, 2019
+              </div>
+              <div>
+                <a href="">[paper]</a>
+                <a href="">[code]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/17_ICS2_thumb.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                  Traffic pattern modeling, trajectory classification 
+                  and vehicle tracking within urban intersections
+              </div>
+              <div class='paper-authors'>
+                  <u>Cheng-En Wu</u>, Wen-Yen Yang, Hai-Che Ting, Jia-Shung Wang
+              </div>
+              <div>
+                International Smart Cities Conference (ISC2), 2017
+              </div>
+              <div>
+                <a href="">[paper]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row vspace-top'>
+          <h1>Work Experience</h1>
+          <div class='row vspace-top'>
+              <div class='col-xs-3 text-center'>
+                <img class='paper-image' src='images/logos/sinica.png'>
+              </div>
+              <div class='col-xs-9'>
+                <div class='paper-title'>
+                  <br />
+                  Academia Sinica
+                </div>
+                <div class='paper-authors'>
+                  Research Assistant
+                </div>
+                <div>
+                  Mar. 2018 - Present
+                </div>
+                <div>
+                  Taipei, Taiwan
+                </div>
+              </div>
+            </div>
+         <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/logos/mtk_circle.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                <br />
+                MediaTek Inc.
+              </div>
+              <div class='paper-authors'>
+                Software Engineer
+              </div>
+              <div>
+                Mar. 2017 - Mar. 2018
+              </div>
+              <div>
+                Hsinchu, Taiwan
+              </div>
+            </div>
+          </div>
+          
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/logos/realtek_circle.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                <br />
+                Realtek Inc.
+              </div>
+              <div class='paper-authors'>
+                Software Engineer
+              </div>
+              <div>
+                Dec. 2016 - Mar. 2017
+              </div>
+              <div>
+                Hsinchu, Taiwan
+              </div>
+            </div>
+          </div>
+          <div class='row vspace-top'>
+              <div class='col-xs-3 text-center'>
+                <img class='paper-image' src='images/logos/GO-Trust_circle.png'>
+              </div>
+              <div class='col-xs-9'>
+                <div class='paper-title'>
+                  <br />
+                  GOTrust Technology Inc.
+                </div>
+                <div class='paper-authors'>
+                  Software Engineer
+                </div>
+                <div>
+                  Jan. 2014 - Jun. 2014
+                </div>
+                <div>
+                  Taichung, Taiwan
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class='row vspace-top'>
+          <h1>Education</h1>
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/logos/nthu.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                <br />
+                <br />
+                National Tsing Hua University
+              </div>
+              <div class='paper-authors'>
+                M.S. in Computer Science
+              </div>
+            </div>
+          </div>
+          
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/logos/ntust.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                <br />
+                <br />
+                National Taiwan University of Science and Technology
+              </div>
+              <div class='paper-authors'>
+                Ｂ.S. in Electrical and Computer Engineering
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row vspace-top'></div>
+      </div>
+    </div>
+  </body>
+</html>
